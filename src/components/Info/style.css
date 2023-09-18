@@ -1,0 +1,38 @@
+/*info section    */
+.info_wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 11.25rem;
+    gap: 2.063rem;
+}
+
+.about-info-text {
+    font-weight: 700;
+    color: #FB8958;
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+@media (max-width: 767px) {
+    .info_wrapper {
+        flex-wrap: wrap;
+        margin-top: 3rem;
+    }
+
+    .info_wrapper .info-left-image {
+        order: 1;
+    }
+
+    .info_wrapper .about-info-text {
+        order: 3;
+    }
+
+    .info_wrapper .info-right-image {
+        order: 2;
+    }
+
+    .about-info-text {
+        font-size: 1.5rem;
+    }
+}

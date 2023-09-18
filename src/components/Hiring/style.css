@@ -1,0 +1,66 @@
+/*hiring section*/
+.hiring {
+    padding-top: 8.75rem;
+    padding-bottom: 6.563rem;
+    display: flex;
+    align-items: center;
+}
+.hiring-left {
+    flex-grow: 1;
+}
+.hiring-content {
+    flex-grow: 3;
+    text-align: center;
+}
+.hiring-content-title {
+    font-size: 3.125rem;
+    font-weight: 700;
+    text-align: center;
+    color: #3D4F5C;
+}
+.hiring-content-text {
+    font-size: 1.5rem;
+    font-weight: 400;
+    text-align: center;
+    color: #FB8958;
+    margin-top: 1.875rem;
+}
+.hiring-right {
+    flex-grow: 1;
+    display: flex;
+    justify-content: end;
+}
+.hiring-content-button {
+    font-size: 1.125rem;
+    font-weight: 700;
+    text-align: center;
+    color: #ffffff;
+    background-color: #46B8C8;
+    border-radius: 2.031rem;
+    padding: 0.719rem 2.125rem;
+    margin-top: 2.125rem;
+    border: none;
+}
+
+@media (max-width: 767px) {
+    .hiring {
+        flex-wrap: wrap;
+    }
+    .hiring-left img {
+        width: 70%;
+    }
+    .hiring-right img {
+        width: 70%;
+    }
+    .hiring-left {
+        width: 50%;
+        order: 1;
+    }
+    .hiring-content {
+        order: 3;
+    }
+    .hiring-right {
+        order: 2;
+        width: 50%;
+    }
+}

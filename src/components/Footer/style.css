@@ -1,0 +1,111 @@
+/*footer section*/
+.footer {
+    background-color: #FBFBFA;
+}
+.footer-wrapper{
+    padding-top: 6.5rem;
+    padding-bottom: 7.5rem;
+    display: grid;
+    grid-template-areas: "a b c d";
+    gap: 90px
+}
+.footer-logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.footer-logo-text {
+    font-size: 1.125rem;
+    font-weight: 400;
+    text-align: left;
+    color: #939393;
+    padding-top: 5.281rem;
+    line-height: 1.875rem;
+}
+.footer-companies {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 20px
+}
+.footer-companies-title {
+    font-size: 1.125rem;
+    font-weight: 400;
+    line-height: 1.125rem;
+    text-align: left;
+    color:#3D4F5C;
+}
+.footer-companies-link {
+    text-decoration: none;
+    font-size: 1.125rem;
+    font-weight: 400;
+    text-align: left;
+    color: #46B8C8;
+}
+.footer-contact {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 20px
+}
+.footer-contact-title {
+    font-size: 1.125rem;
+    font-weight: 400;
+    text-align: left;
+    color: #3D4F5C;
+}
+.footer-contact-text {
+    font-size: 1.125rem;
+    font-weight: 400;
+    text-align: left;
+    color: #939393;
+    line-height: 1.5rem;
+}
+.footer-contact-link {
+    text-decoration: none;
+    font-size: 1.125rem;
+    font-weight: 400;
+    text-align: left;
+    color: #46B8C8;
+}
+.footer-follow {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    gap: 1rem;
+}
+.footer-follow-title {
+    font-size:1.125rem;
+    font-weight: 400;
+    text-align: left;
+    color: #3D4F5C;
+}
+.footer-follow  button{
+    border: none;
+    background-color: #ffffff;
+    padding: 0;
+    text-align: left;
+    cursor: pointer;
+    width: 1.438rem;
+}
+
+@media (max-width: 575px){
+    .footer-wrapper{
+        grid-template-areas:
+        "a"
+        "b"
+        "c"
+        "d" !important;
+        gap: 2rem;
+        padding: 3rem 0 1rem;
+    }
+    .footer-logo-text {
+        padding-top: 2rem;
+    }
+}
+
+@media (max-width: 991px) {
+    .footer-wrapper {
+        grid-template-areas: "a b" "c d";
+    }
+}

@@ -1,0 +1,64 @@
+/*news section*/
+.news_wrapper {
+    width: 100%;
+    display: flex;
+}
+.news_main {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-grow: 2;
+}
+.news_title p {
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-align: center;
+    color: #FB8958;
+}
+.news-left {
+    flex-grow: 1;
+}
+.news-right {
+    position: relative;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+.new_img img {
+    width: 7.125rem;
+}
+
+.cancel_button button{
+    display: flex;
+    border: none;
+    background-color: #ffffff;
+    cursor: pointer;
+}
+.new-message {
+    position: absolute;
+    width: 16.063rem;
+    color:#ffffff;
+    background-color: #46B8C8;
+    font-size: 0.875rem;
+    font-weight: 500;
+    padding: 1.125rem 0.875rem;
+    border-bottom-left-radius: 2.5rem;
+    border-top-left-radius: 2.5rem;
+    border-top-right-radius: 2.5rem;
+    right: 5rem;
+    bottom: 8.25rem;
+    box-shadow: 0 0.25rem 0.25rem 0 #1D4B5240;
+}
+@media (max-width: 576px) {
+    .news_wrapper {
+        flex-direction: column-reverse;
+    }
+    .new-message {
+        margin-bottom: 1rem;
+        position: relative;
+        bottom: initial;
+        width: fit-content;
+        right: initial;
+    }
+}

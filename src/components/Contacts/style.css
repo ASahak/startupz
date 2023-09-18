@@ -1,0 +1,90 @@
+/*contacts section*/
+.contacts {
+    background-color: #FFC351;
+    background-image: url("../../icons/racet.png");
+    background-repeat: no-repeat;
+    background-position: calc(100% - 112px) bottom;
+    padding:  3.75rem 7.5rem 4.375rem 7.5rem;
+}
+.contacts-title {
+    font-size: 3.75rem;
+    font-weight: 700;
+    text-align: left;
+    color: #ffffff;
+}
+.contacts-text {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #ffffff;
+    padding-top: 2.125rem;
+}
+.contacts-form {
+    padding: 4.5rem 2.625rem 2.5rem 2.563rem;
+    border-radius: 2.563rem;
+    background-color:  #F3F3F3;
+    width: 32rem;
+    margin-top: 2.125rem;
+}
+.contacts-name-input {
+    width: 100%;
+    padding: 1.125rem 1rem;
+    background-color: #ffffff;
+    border-radius: 0.625rem;
+    border: none;
+    color: #939393;
+    font-size: 1.125rem;
+    font-weight: 400;
+}
+.contacts-email-input {
+    width: 100%;
+    margin-top: 1rem;
+    padding: 1.125rem 1rem;
+    background-color: #ffffff;
+    border-radius: 0.625rem;
+    border: none;
+    color: #939393;
+    font-size: 1.125rem;
+    font-weight: 400;
+}
+.contacts-message-input {
+    width: 100%;
+    margin-top: 1rem;
+    padding:1.125rem 1rem;
+    background-color: #ffffff;
+    border-radius: 0.625rem;
+    border: none;
+    color: #939393;
+    font-size: 1.125rem;
+    font-weight: 400;
+    height: 16.875rem;
+    resize: none;
+}
+.contacts-send-button {
+    display: block;
+    border: none;
+    color: #FBFBFA;
+    font-size: 1.125rem;
+    font-weight: 700;
+    text-align: center;
+    background-color: #3D4F5C;
+    border-radius: 2.031rem;
+    padding: 0.813rem 2.5rem;
+    margin: 2.125rem auto 0;
+    cursor: pointer;
+}
+
+@media (max-width: 767px) {
+    .contacts {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+    .contacts-form{
+        width: 100%;
+    }
+    .about-info-text {
+        font-size: 1.5rem;
+    }
+    .contacts-title {
+        font-size: 2rem;
+    }
+}

@@ -1,0 +1,107 @@
+/* header */
+.header-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.875rem 0;
+    width: 100%;
+}
+.nav-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2.625rem;
+}
+#mobile-menu-button {
+    display: none;
+    border: none;
+    padding:0.3rem;
+    font-size: 1.5rem;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 0.1rem;
+}
+.nav-link {
+    text-decoration: none;
+    font-size: 1.125rem;
+    font-weight: 400;
+    color: #3D4F5C;
+}
+.nav-link_active {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 1.125rem;
+    font-weight: 700;
+    color: #46B8C8;
+    border: 0.063rem solid #46B8C8;
+    padding: 0.938rem 2.125rem;
+    border-radius: 2.063rem;
+}
+
+/*Mobile menu btn */
+#mobile-menu-button span{
+    background: #000;
+    border-radius:10px;
+    height:4px;
+    margin: 4px 0;
+    transition: .4s  cubic-bezier(0.68, -0.6, 0.32, 1.6);
+}
+
+span:nth-of-type(1){
+    width:50%;
+
+}
+
+span:nth-of-type(2){
+    width:100%;
+}
+
+span:nth-of-type(3){
+    width:75%;
+}
+
+.main-nav:has(.nav-list.show) #mobile-menu-button span:nth-of-type(1){
+    transform-origin:bottom;
+    transform:rotatez(45deg) translate(6px,2px)
+}
+
+.main-nav:has(.nav-list.show) #mobile-menu-button span:nth-of-type(2){
+    transform-origin:top;
+    transform:rotatez(-45deg)
+}
+
+.main-nav:has(.nav-list.show) #mobile-menu-button span:nth-of-type(3){
+    transform-origin:bottom;
+    width:50%;
+    transform: translate(14px,-8px) rotatez(45deg);
+}
+
+@media (max-width: 767px) {
+    #mobile-menu-button{
+        display:flex;
+        flex-direction:column;
+        width:40px;
+        user-select: none;
+        cursor:pointer;
+    }
+    .nav-list {
+        position: absolute;
+        background: #fff;
+        flex-direction: column;
+        justify-content: start;
+        top: 112px;
+        left: 0;
+        padding: 4rem 0;
+        transform: translateY(-50px);
+        opacity: 0;
+        z-index: -1;
+        transition: .3s;
+        width: 100%;
+        box-shadow: -1px 4px 9px 0px #f1eeeefa;
+    }
+    .nav-list.show {
+        z-index: 22 !important;
+        transform: translateY(0) !important;
+        opacity: 1 !important;
+    }
+}
