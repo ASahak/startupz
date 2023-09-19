@@ -1,4 +1,7 @@
 /*works section*/
+.works-wrapper {
+    padding: 9.375rem 0;
+}
 .works-title-wrapper {
     margin: 0 auto;
     color: #3D4F5C;

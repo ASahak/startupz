@@ -1,4 +1,7 @@
 /*description section*/
+.description {
+    background-color: #FBFAFA;
+}
 .description-wrapper {
     padding: 9.375rem 0;
     width: 100%;

@@ -3,8 +3,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 11.25rem;
     gap: 2.063rem;
+    padding-bottom: 9.375rem;
 }
 
 .about-info-text {

@@ -1,6 +1,7 @@
 import React from 'react';
 import idea from '../../icons/idea.png';
 import '../Description/style.css';
+
 const SecondDescription = () => {
     return (
         <section className="description">
